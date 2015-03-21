@@ -1,4 +1,4 @@
-=== real.kit ===
+﻿=== real.kit ===
 
 Contributors: Realist
 Donate link:
@@ -48,3 +48,14 @@ Use PHP function `realkit_taxonomy_thumb()` to get the URL of the current taxono
 **Machine translation:**
 
 Like any other WordPress plugin.
+
+== Screenshots ==
+
+1. ID записей | Posts ID
+1. ID рубрик | Categories ID
+1. Миниатюра рубрики | Categories Thumbnail
+1. Миниатюра рубрики | Categories Thumbnail
+1. Транслит записи | Posts Translit
+1. Транслит медиафайла | Media files Ttranslit
+
+== Changelog ==
