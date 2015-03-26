@@ -61,6 +61,15 @@ Like any other WordPress plugin.
 == Changelog ==
 
 = 1.1 =
-* Добавлен русский перевод интерфайса. | Added Russian localization.
-* Исправлена ошибка транслитерации. | Fixed Transliteration bug.
-* Другие правки. | Other changes.
+
+*English read below*
+
+* Добавлен русский перевод интерфайса.
+* Исправлена ошибка транслитерации.
+* Другие правки.
+
+*Machine translation:*
+
+* Added Russian localization.
+* Fixed Transliteration bug.
+* Other changes.
