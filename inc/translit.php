@@ -31,15 +31,16 @@ $realkit_translit_dic = array(
 );
 
 // Преобразовать
-add_action('sanitize_title', 'realkit_translit_url');
-add_filter('sanitize_file_name', 'realkit_translit');
+add_filter('sanitize_title', 'realkit_translit_url', 0);
+add_filter('sanitize_file_name', 'realkit_translit', 0);
 if (!function_exists('realkit_translit')) {
   function realkit_translit($string) {
 
     global $realkit_translit_dic;
-
     $standard = get_option('realkit_translit_standard');
     $standard = ($standard) ? $standard : 'iso';
+
+    $string = urldecode($string);
 
     // Транслитерация
     $string = strtr($string, $realkit_translit_dic[$standard]);
