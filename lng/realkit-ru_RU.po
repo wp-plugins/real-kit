@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-03-20 09:19+0300\n"
+"PO-Revision-Date: 2015-03-20 09:26+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: d:\\Web\\OpenServer\\domains\\wordpress\\www\\wp-content"
+"\\plugins\\real.kit\\\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/thumbnails.php:17 inc/thumbnails.php:38 inc/thumbnails.php:63
+#: inc/thumbnails.php:104
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: inc/thumbnails.php:20 inc/thumbnails.php:46 inc/thumbnails.php:110
+msgid "Upload/Add"
+msgstr "Загрузить/Добавить"
+
+#: inc/thumbnails.php:49 inc/thumbnails.php:113
+msgid "Remove"
+msgstr "Удалить"
+
+#: inc/translit.php:73
+msgid "Translit"
+msgstr "Транслитерация"
+
+#: inc/translit.php:89
+msgid "Translit options"
+msgstr "Настройки транслитерации"
+
+#: inc/translit.php:96
+msgid "Standard"
+msgstr "Стандарт"
+
+#: inc/translit.php:101
+msgid "ISO 9:1995"
+msgstr "ISO 9:1995"
+
+#: inc/translit.php:106
+msgid "GOST 16876-71"
+msgstr "ГОСТ 16876-71"
+
+#: inc/translit.php:114
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: tpl/real.php:13
+msgid "Donation"
+msgstr "Благотворительность"
+
+#: tpl/real.php:14
+msgid "I would be very grateful for any support!"
+msgstr "Буду безмерно благодарен за любую поддержку!"
+
+#: tpl/real.php:17
+msgid "Donate"
+msgstr ""

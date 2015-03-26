@@ -59,3 +59,8 @@ Like any other WordPress plugin.
 1. Транслит медиафайла | Media files Ttranslit
 
 == Changelog ==
+
+= 1.1 =
+* Добавлен русский перевод интерфайса. | Added Russian localization.
+* Исправлена ошибка транслитерации. | Fixed Transliteration bug.
+* Другие правки. | Other changes.

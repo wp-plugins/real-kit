@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: real.kit
-Version: 1.0
+Plugin Name: real.Kit
+Version: 1.1
 Plugin URI:
-Description: Набор улучшений для Wordpress от 3.5
+Description: Набор дополнений и улучшений WordPress | Kit of additions and improvements for WordPress
 Author: Realist
 Author URI:
 Text Domain: realkit
@@ -35,25 +35,30 @@ if (is_admin()) {
   // Транслитерация
   require_once $realkit['plugin_dir_path'] . 'inc/translit.php';
 
-  // real.
+  // Внешний вид админки
+  add_action('admin_enqueue_scripts', 'realkit_require_assests');
+  if (!function_exists('realkit_require_assests')) {
+    function realkit_require_assests() {
+
+      global $realkit;
+      $url = $realkit['plugin_dir_url'];
+
+      // CSS
+      wp_register_style('realkit', $url . 'css/realkit.css');
+      wp_enqueue_style('realkit');
+
+    }
+  }
+
+  // real.Donate
   if (!function_exists('real_add_real_page')) {
     add_action('admin_menu', 'real_add_real_page');
     function real_add_real_page() {
-      add_menu_page('real.', 'real.', 'manage_options', 'real_donate', 'real_donate_page', 'dashicons-businessman');
+      add_menu_page('real.', 'real.', 'manage_options', 'real', 'real_donate_page', 'dashicons-businessman');
     }
     function real_donate_page() {
-      $url  = 'http://files.page4start.com/';
-      $data = array(
-        'file' => 'wordpress/pages/real.php'
-      );
-      $answer = file_get_contents($url, false, stream_context_create(array(
-        'http' => array(
-          'method'  => 'POST',
-          'header'  => "Content-Type: application/x-www-form-urlencoded\r\n",
-          'content' => http_build_query($data)
-        )
-      )));
-      echo $answer;
+      global $realkit;
+      require_once $realkit['plugin_dir_path'] . 'tpl/real.php';
     }
   }
 
