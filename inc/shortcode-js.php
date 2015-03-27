@@ -6,25 +6,33 @@ add_shortcode('js','realkit_shortcode_js');
 function realkit_shortcode_js($args, $content = '')
 {
 
-  if (empty($content)) return false;
+  if (isset($args['src'])) {
+    $return = '<script type="text/javascript" src="' . $args['src'] . '"></script>';
+  }
 
-  $content = strip_tags($content);
-  $content = htmlspecialchars($content);
+  elseif (!empty($content)) {
 
-  $content = str_replace('&amp;#8216;', '\'', $content);
-  $content = str_replace('&amp;#8217;', '\'', $content);
-  $content = str_replace('&amp;#8242;', '\'', $content);
-  $content = str_replace('&amp;#8220;', '"',  $content);
-  $content = str_replace('&amp;#8221;', '"',  $content);
-  $content = str_replace('&amp;#8243;', '"',  $content);
-  $content = str_replace('&amp;#171;',  '"',  $content);
-  $content = str_replace('&amp;#187;',  '"',  $content);
-  $content = str_replace("&amp;#039;",  "'",  $content);
-  $content = str_replace("&amp;#038;",  "&",  $content);
-  $content = str_replace("&amp;#38;",   "&",  $content);
-  $content = str_replace("&amp;lt;(",   "<",  $content);
-  $content = str_replace(")&amp;gt;",   ">",  $content);
+    $content = strip_tags($content);
+    $content = htmlspecialchars($content);
 
-  return '<script type="text/javascript">' . $content . '</script>';
+    $content = str_replace('&amp;#8216;', '\'', $content);
+    $content = str_replace('&amp;#8217;', '\'', $content);
+    $content = str_replace('&amp;#8242;', '\'', $content);
+    $content = str_replace('&amp;#8220;', '"',  $content);
+    $content = str_replace('&amp;#8221;', '"',  $content);
+    $content = str_replace('&amp;#8243;', '"',  $content);
+    $content = str_replace('&amp;#171;',  '"',  $content);
+    $content = str_replace('&amp;#187;',  '"',  $content);
+    $content = str_replace("&amp;#039;",  "'",  $content);
+    $content = str_replace("&amp;#038;",  "&",  $content);
+    $content = str_replace("&amp;#38;",   "&",  $content);
+    $content = str_replace("&amp;lt;(",   "<",  $content);
+    $content = str_replace(")&amp;gt;",   ">",  $content);
+
+    $return  = '<script type="text/javascript">' . $content . '</script>';
+
+  }
+
+  return (isset($return)) ? $return : false;
 
 }

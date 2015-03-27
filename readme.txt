@@ -5,7 +5,7 @@ Donate link:
 Tags: kit, real, real., real.kit, image, images, thumb, thumbnail, thumbnails, category, categories, taxonomy, taxonomies, admin, id, ids, reveal, post, page, media, user, l10n, translit, transliteration, slugs, russian, rustolat, cyrtolat, cyrillic, javascript, js, add, набор, реалист, картинка, миниатюра, категории, рубрики, таксономии, метки, админ, пост, запись, страница, меди, пользователи, транслит, транслитерация, слаг, ярлык, русский, кириллица
 Requires at least: 4.1.1
 Tested up to: 4.1.1
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 3) Заменяет кириллические символы на латинские (транслит) в ярлыках заголовков и названиях файлов.
 
-4) Позволяет вставлять JavaScript в текст записи или страницы, используя "шорткод" `[js]`.
+4) Позволяет вставлять JavaScript в текст записи или страницы, используя шорткод `[js]`.
 
 Все HTML теги внутри этого шорткода будут вырезаны. Если Вам нужно написать HTML тег внутри JS - нужно к угловым скобки тега `<` и `>` добавить круглые скобки `<(` и `)>` соответственно.
 
@@ -35,6 +35,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 `[js]
 console.log('<(div class="test")><(a href="#")>Лог<(/a)><(/div)>');
 [/js]`
+
+Для того что бы подключить JS файл, нужно шорткоду `[js]` передать параметр `src`.
+
+Пример:
+`[js src="/url/address/script.js"][/js]`
 
 *Machine translation:*
 
@@ -59,6 +64,11 @@ Example:
 console.log('<(div class="test")><(a href="#")>Some Text<(/a)><(/div)>');
 [/js]`
 
+To include JS file, You need shortcode `[js]` to pass a parameter `src`.
+
+Example:
+`[js src="/url/address/script.js"][/js]`
+
 == Installation ==
 
 Как и любой другой плагин WordPress.
@@ -78,10 +88,32 @@ Like any other WordPress plugin.
 
 == Changelog ==
 
+= 1.2.1 =
+
+* В шорткод `[js]...[/js]` добавлен параметр `src`.
+* Другие правки.
+
+*Machine translation:*
+
+* In the shortcode `[js]...[/js]` added parameter `src`.
+* Other changes.
+
 = 1.2 =
-* Добавлена поддержка шорткода `[js]...[/js]`
+
+* Добавлена поддержка шорткода `[js]...[/js]`.
+
+*Machine translation:*
+
+* Added shortcode `[js]...[/js]`.
 
 = 1.1 =
-* Добавлен русский перевод интерфайса. | Added Russian localization.
-* Исправлена ошибка транслитерации. | Fixed Transliteration bug.
-* Другие правки. | Other changes.
+
+* Добавлен русский перевод интерфайса.
+* Исправлена ошибка транслитерации.
+* Другие правки.
+
+*Machine translation:*
+
+* Added Russian localization.
+* Fixed Transliteration bug.
+* Other changes.
