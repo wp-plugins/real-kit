@@ -3,20 +3,19 @@
 Plugin Name: real.Kit
 Version: 1.1
 Plugin URI:
-Description: Набор дополнений и улучшений WordPress | Kit of additions and improvements for WordPress
+Description: Набор дополнений и улучшений WordPress | <a target="_blank" href="https://wordpress.org/plugins/real-kit/">English Description.</a>]
 Author: Realist
 Author URI:
 Text Domain: realkit
 Domain Path: /lng/
 */
 
-if (is_admin()) {
+$realkit = array(
+  'plugin_dir_path' => plugin_dir_path(__FILE__),
+  'plugin_dir_url'  => plugin_dir_url(__FILE__)
+);
 
-  //
-  $realkit = array(
-    'plugin_dir_path' => plugin_dir_path(__FILE__),
-    'plugin_dir_url'  => plugin_dir_url(__FILE__)
-  );
+if (is_admin()) {
 
   // Локализация
   add_action('plugins_loaded', 'realkit_load_locale');
@@ -63,3 +62,6 @@ if (is_admin()) {
   }
 
 }
+
+// Шорткод с JS
+require_once $realkit['plugin_dir_path'] . 'inc/shortcode-js.php';
