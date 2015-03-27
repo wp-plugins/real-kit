@@ -3,7 +3,7 @@
 Plugin Name: real.Kit
 Version: 1.2
 Plugin URI:
-Description: Набор дополнений и улучшений WordPress | <a target="_blank" href="https://wordpress.org/plugins/real-kit/">English Description.</a>]
+Description: Набор дополнений и улучшений WordPress | <a target="_blank" href="https://wordpress.org/plugins/real-kit/">English Description.</a>
 Author: Realist
 Author URI:
 Text Domain: realkit
