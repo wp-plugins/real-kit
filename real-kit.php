@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: real.Kit
-Version: 1.2.1
+Version: 1.2.3
 Plugin URI:
 Description: Набор дополнений и улучшений WordPress | <a target="_blank" href="https://wordpress.org/plugins/real-kit/">English Description.</a>
 Author: Realist
@@ -15,18 +15,15 @@ $realkit = array(
   'plugin_dir_url'  => plugin_dir_url(__FILE__)
 );
 
+// Локализация
+add_action('plugins_loaded', 'realkit_load_locale');
+function realkit_load_locale() {
+  if (defined('REALKIT_LOAD_LOCALE')) return;
+  load_plugin_textdomain('realkit', false, dirname(plugin_basename(__FILE__)) . '/lng/');
+  define('REALKIT_LOAD_LOCALE', true);
+}
+
 if (is_admin()) {
-
-  // Локализация
-  add_action('plugins_loaded', 'realkit_load_locale');
-  function realkit_load_locale() {
-    if (defined('REALKIT_LOAD_LOCALE')) return;
-    load_plugin_textdomain('realkit', false, dirname(plugin_basename(__FILE__)) . '/lng/');
-    define('REALKIT_LOAD_LOCALE', true);
-  }
-
-  // Миниатюры
-  require_once $realkit['plugin_dir_path'] . 'inc/thumbnails.php';
 
   // ID
   require_once $realkit['plugin_dir_path'] . 'inc/ids.php';
@@ -62,6 +59,9 @@ if (is_admin()) {
   }
 
 }
+
+// Миниатюры
+require_once $realkit['plugin_dir_path'] . 'inc/thumbnails.php';
 
 // Шорткод с JS
 require_once $realkit['plugin_dir_path'] . 'inc/shortcode-js.php';
