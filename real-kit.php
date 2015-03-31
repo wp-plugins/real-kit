@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: real.Kit
-Version: 1.2.2
+Version: 1.2.3
 Plugin URI:
 Description: Набор дополнений и улучшений WordPress | <a target="_blank" href="https://wordpress.org/plugins/real-kit/">English Description.</a>
 Author: Realist
@@ -22,6 +22,9 @@ function realkit_load_locale() {
   load_plugin_textdomain('realkit', false, dirname(plugin_basename(__FILE__)) . '/lng/');
   define('REALKIT_LOAD_LOCALE', true);
 }
+
+// Миниатюры
+require_once $realkit['plugin_dir_path'] . 'inc/thumbnails.php';
 
 if (is_admin()) {
 
@@ -59,9 +62,6 @@ if (is_admin()) {
   }
 
 }
-
-// Миниатюры
-require_once $realkit['plugin_dir_path'] . 'inc/thumbnails.php';
 
 // Шорткод с JS
 require_once $realkit['plugin_dir_path'] . 'inc/shortcode-js.php';

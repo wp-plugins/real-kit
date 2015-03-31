@@ -88,6 +88,14 @@ Like any other WordPress plugin.
 
 == Changelog ==
 
+= 1.2.3 =
+
+* Исправленна ошибка версии 1.2.2
+
+*Machine translation:*
+
+* Fixed bug from 1.2.2
+
 = 1.2.2 =
 
 * Исправленна ошибка при вызове функции `realkit_taxonomy_thumb()`
