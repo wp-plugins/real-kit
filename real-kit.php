@@ -34,21 +34,6 @@ if (is_admin()) {
   // Транслитерация
   require_once $realkit['plugin_dir_path'] . 'inc/translit.php';
 
-  // Внешний вид админки
-  add_action('admin_enqueue_scripts', 'realkit_require_assests');
-  if (!function_exists('realkit_require_assests')) {
-    function realkit_require_assests() {
-
-      global $realkit;
-      $url = $realkit['plugin_dir_url'];
-
-      // CSS
-      wp_register_style('realkit', $url . 'css/realkit.css');
-      wp_enqueue_style('realkit');
-
-    }
-  }
-
   // real.Donate
   if (!function_exists('real_add_real_page')) {
     add_action('admin_menu', 'real_add_real_page');

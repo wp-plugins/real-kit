@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
   });
 
   $('.editinline').on('click', function() {
-    var parent = $(this).closest('.alternate'),
+    var parent = $(this).closest('tr'),
         id     = parent.attr('id').replace('tag-', ''),
         src    = parent.find('img.taxonomy-thumb').attr('src');
     setTimeout(function() {
