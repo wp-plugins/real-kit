@@ -2,10 +2,10 @@
 
 Contributors: Realist
 Donate link:
-Tags: kit, real, real., real.kit, image, images, thumb, thumbnail, thumbnails, category, categories, taxonomy, taxonomies, admin, id, ids, reveal, post, page, media, user, l10n, translit, transliteration, slugs, russian, rustolat, cyrtolat, cyrillic, javascript, js, add, набор, реалист, картинка, миниатюра, категории, рубрики, таксономии, метки, админ, пост, запись, страница, меди, пользователи, транслит, транслитерация, слаг, ярлык, русский, кириллица
+Tags: kit, real, real., real.kit, image, images, thumb, thumbnail, thumbnails, category, categories, taxonomy, taxonomies, admin, id, ids, reveal, post, page, media, user, l10n, translit, transliteration, slugs, russian, rustolat, cyrtolat, cyrillic, javascript, js, add, modal, modals, window, windows, набор, реалист, картинка, миниатюра, категории, рубрики, таксономии, метки, админ, пост, запись, страница, меди, пользователи, транслит, транслитерация, слаг, ярлык, русский, кириллица, модальные окна
 Requires at least: 4.1.1
 Tested up to: 4.2
-Stable tag: 1.3
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,11 @@ console.log('<(div class="test")><(a href="#")>Лог<(/a)><(/div)>');
 Пример:
 `[js src="/url/address/script.js"][/js]`
 
+5) Добавляет новый тип записей для создания модальных окон. Если данная возможность Вам не нужна - её можно отключить ("Настройки" > "Модальные окна"). После публикации нового модального окна будет сгенерирован шорткод который, в свою очередь, будет генерировать кнопку открытия модального окна. Шорткод может принимать один обязательный параметр `open` (ID записи модального окна) и два не обязательных (атрибуты кнопки) `id` и `class`.
+
+Пример шорткода:
+`[modal open="540" id="button_id" class="button_class"]Текст кнопки[/modal]`
+
 *Machine translation:*
 
 = The plugin: =
@@ -69,6 +74,11 @@ To include JS file, You need shortcode `[js]` to pass a parameter `src`.
 Example:
 `[js src="/url/address/script.js"][/js]`
 
+5) Adds a new post type to create modal windows. If this option You do not need - you can turn it off ("Settings" > "Modals"). After the publication of a new modal window will be generated shortcode which, in turn, will generate the button that opens the modal window. The shortcode can take one mandatory parameter `open` (ID of the modal window post) and two are not mandatory (buttons attributes) `id` and `class`.
+
+Shortcode example:
+`[modal open="540" id="button_id" class="button_class"]Button Title[/modal]`
+
 == Installation ==
 
 Как и любой другой плагин WordPress.
@@ -85,6 +95,8 @@ Like any other WordPress plugin.
 1. Миниатюра рубрики | Categories Thumbnail
 1. Транслит записи | Posts Translit
 1. Транслит медиафайла | Media files Translit
+1. Модальные окна | Modal windows
+1. Отключение модальных окон | Modal windows toggle
 
 == Changelog ==
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-03-20 09:19+0300\n"
-"PO-Revision-Date: 2015-03-20 09:26+0300\n"
+"POT-Creation-Date: 2015-04-26 09:19+0300\n"
+"PO-Revision-Date: 2015-04-26 09:19+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -11,11 +11,121 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.4\n"
 "X-Poedit-Basepath: d:\\Web\\OpenServer\\domains\\wordpress\\www\\wp-content"
-"\\plugins\\real.kit\\\n"
+"\\plugins\\real-kit\\\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: __\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+
+#: inc/modals.php:16 inc/modals.php:170
+msgid "Modals"
+msgstr "Модальные окна"
+
+#: inc/modals.php:17
+msgid "Modal"
+msgstr "Модальное окно"
+
+#: inc/modals.php:18
+msgid "Add New"
+msgstr "Добавить новое"
+
+#: inc/modals.php:19
+msgid "Add New Modal"
+msgstr "Добавить новое модальное окно"
+
+#: inc/modals.php:20
+msgid "Edit Modal"
+msgstr "Редактировать модальное окно"
+
+#: inc/modals.php:21
+msgid "New Modal"
+msgstr "Новое модальное окно"
+
+#: inc/modals.php:22
+msgid "All Modals"
+msgstr "Все окна"
+
+#: inc/modals.php:23
+msgid "View Modal"
+msgstr "Просмотр"
+
+#: inc/modals.php:24
+msgid "Search Modal"
+msgstr "Найти модальное окно"
+
+#: inc/modals.php:25
+msgid "No Modal found"
+msgstr "Ничего не найдено"
+
+#: inc/modals.php:26
+msgid "No Modal found in Trash"
+msgstr "В корзине ничего не найдено"
+
+#: inc/modals.php:27
+msgid "real.Modals"
+msgstr ""
+
+#: inc/modals.php:48
+msgid "Modal updated."
+msgstr "Модальное окно обновлено"
+
+#: inc/modals.php:49
+msgid "Modal restored."
+msgstr "Модальное окно восстановлено"
+
+#: inc/modals.php:50
+msgid "Modal published."
+msgstr "Модальное окно опубликовано"
+
+#: inc/modals.php:51
+msgid "Modal saved."
+msgstr "Модальное окно сохранено"
+
+#: inc/modals.php:52
+msgid "Modal scheduled for:"
+msgstr "Публикация запланирована на:"
+
+#: inc/modals.php:52
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: inc/modals.php:53
+msgid "Modal draft updated."
+msgstr "Черновик модального окна обновлен"
+
+#: inc/modals.php:69
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: inc/modals.php:78 inc/modals.php:163
+msgid "Button Title"
+msgstr "Текст кнопки"
+
+#: inc/modals.php:159
+msgid "Open Button Shortcode"
+msgstr "Шорткод кнопки открытия"
+
+#: inc/modals.php:178 inc/translit.php:82
+msgid "Saved"
+msgstr ""
+
+#: inc/modals.php:178
+msgid "Please reload the page (press F5)."
+msgstr "Пожалуйста, перезагрузите страницу (можно нажать F5)"
+
+#: inc/modals.php:186
+msgid "Modals options"
+msgstr "Настройки модальных окон"
+
+#: inc/modals.php:197
+msgid "Use modal windows on this site."
+msgstr "Использовать модальные окна на этом сайте"
+
+#: inc/modals.php:205 inc/translit.php:116
+msgid "Save Changes"
+msgstr "Сохранить изменения"
 
 #: inc/thumbnails.php:17 inc/thumbnails.php:38 inc/thumbnails.php:63
 #: inc/thumbnails.php:104
@@ -30,29 +140,25 @@ msgstr "Загрузить/Добавить"
 msgid "Remove"
 msgstr "Удалить"
 
-#: inc/translit.php:73
+#: inc/translit.php:75
 msgid "Translit"
 msgstr "Транслитерация"
 
-#: inc/translit.php:89
+#: inc/translit.php:91
 msgid "Translit options"
 msgstr "Настройки транслитерации"
 
-#: inc/translit.php:96
+#: inc/translit.php:98
 msgid "Standard"
 msgstr "Стандарт"
 
-#: inc/translit.php:101
+#: inc/translit.php:103
 msgid "ISO 9:1995"
 msgstr "ISO 9:1995"
 
-#: inc/translit.php:106
+#: inc/translit.php:108
 msgid "GOST 16876-71"
 msgstr "ГОСТ 16876-71"
-
-#: inc/translit.php:114
-msgid "Save Changes"
-msgstr "Сохранить изменения"
 
 #: tpl/real.php:13
 msgid "Donation"
@@ -62,6 +168,9 @@ msgstr "Благотворительность"
 msgid "I would be very grateful for any support!"
 msgstr "Буду безмерно благодарен за любую поддержку!"
 
-#: tpl/real.php:17
+#: tpl/real.php:16
 msgid "Donate"
 msgstr ""
+
+#~ msgid "Open Modal"
+#~ msgstr "Открыть"
