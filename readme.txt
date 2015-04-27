@@ -100,6 +100,14 @@ Like any other WordPress plugin.
 
 == Changelog ==
 
+= 2.0 =
+
+* Добавлена возможность создания модальных окон
+
+*Machine translation:*
+
+* Added the ability to create modal Windows
+
 = 1.3 =
 
 * Убрано подключение не существующего файла стилей.
