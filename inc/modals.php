@@ -85,6 +85,7 @@ if (empty($modals_toggle) or $modals_toggle == 'on') {
   {
     if (isset($_SESSION['realkit']['modals']) and is_array($_SESSION['realkit']['modals'])) {
       global $realkit;
+      // add_filter('the_content', 'do_shortcode', 11);
       require $realkit['plugin_dir_path'] . 'tpl/modal.php';
     }
   }
@@ -142,7 +143,7 @@ function realkit_modals_shortcode($args, $content) {
       <button type="button"' . $id . $class . $target . ' data-realmodal="open">' . $content . '</button>
     ';
 
-    wp_reset_query();
+    wp_reset_postdata();
 
     return trim(str_replace(array("\r", "\n"), '', $button));
 
