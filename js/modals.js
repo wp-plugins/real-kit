@@ -38,6 +38,7 @@ jQuery(document).ready(function($) {
 
     // Растянуть подложку
     target.css({
+      'width':  doc.width(),
       'height': doc.height()
     });
 
