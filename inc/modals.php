@@ -133,8 +133,8 @@ function realkit_modals_shortcode($args, $content) {
 
     $_SESSION['realkit']['modals'][$modal_id] = $modal;
 
-    $id      = (empty($args['id'])) ? '' : ' id="'    . $args['id']    . '"';
-    $class   = (empty($args['id'])) ? '' : ' class="' . $args['class'] . '"';
+    $id      = (empty($args['id']))    ? '' : ' id="'    . $args['id']    . '"';
+    $class   = (empty($args['class'])) ? '' : ' class="' . $args['class'] . '"';
     $target  = ' data-realmodal-target="#realmodal-' . $args['open'] . '"';
     $content = str_replace(array('<p>', '</p>'), '', $content);
 
