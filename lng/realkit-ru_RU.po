@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-04-26 09:19+0300\n"
-"PO-Revision-Date: 2015-04-26 09:19+0300\n"
+"POT-Creation-Date: 2015-09-11 14:11+0300\n"
+"PO-Revision-Date: 2015-09-11 14:13+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
-"X-Poedit-Basepath: d:\\Web\\OpenServer\\domains\\wordpress\\www\\wp-content"
-"\\plugins\\real-kit\\\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: d:/Web/OpenServer/domains/wordpress/www/wp-content/"
+"plugins/real-kit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: __\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: js\n"
 
-#: inc/modals.php:16 inc/modals.php:170
+#: inc/modals.php:16 inc/modals.php:171
 msgid "Modals"
 msgstr "Модальные окна"
 
@@ -99,31 +99,31 @@ msgstr "Черновик модального окна обновлен"
 msgid "Shortcode"
 msgstr "Шорткод"
 
-#: inc/modals.php:78 inc/modals.php:163
+#: inc/modals.php:78 inc/modals.php:164
 msgid "Button Title"
 msgstr "Текст кнопки"
 
-#: inc/modals.php:159
+#: inc/modals.php:160
 msgid "Open Button Shortcode"
 msgstr "Шорткод кнопки открытия"
 
-#: inc/modals.php:178 inc/translit.php:82
+#: inc/modals.php:179 inc/translit.php:82 inc/views.php:57
 msgid "Saved"
-msgstr ""
+msgstr "Сохранено"
 
-#: inc/modals.php:178
+#: inc/modals.php:179
 msgid "Please reload the page (press F5)."
 msgstr "Пожалуйста, перезагрузите страницу (можно нажать F5)"
 
-#: inc/modals.php:186
+#: inc/modals.php:187
 msgid "Modals options"
 msgstr "Настройки модальных окон"
 
-#: inc/modals.php:197
+#: inc/modals.php:198
 msgid "Use modal windows on this site."
 msgstr "Использовать модальные окна на этом сайте"
 
-#: inc/modals.php:205 inc/translit.php:116
+#: inc/modals.php:206 inc/translit.php:116 inc/views.php:84
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
@@ -159,6 +159,18 @@ msgstr "ISO 9:1995"
 #: inc/translit.php:108
 msgid "GOST 16876-71"
 msgstr "ГОСТ 16876-71"
+
+#: inc/views.php:29 inc/views.php:49
+msgid "Views"
+msgstr "Просмотры"
+
+#: inc/views.php:65
+msgid "views options"
+msgstr "Настройки просмотров"
+
+#: inc/views.php:76
+msgid "Use views counter on this site."
+msgstr "Включить счетчик просмотров на этом сайте."
 
 #: tpl/real.php:13
 msgid "Donation"

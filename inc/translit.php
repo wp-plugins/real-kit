@@ -79,7 +79,7 @@ function realkit_translit_options_page_content() {
   $updated = '';
   if (isset($_POST['realkit_translit_standard'])) {
     update_option('realkit_translit_standard', $_POST['realkit_translit_standard']);
-    $updated = '<div class="updated"><p><strong>Настройки сохранены.</strong></p></div>';
+    $updated = '<div class="updated"><p><strong>' . __('Saved') . '</strong></p></div>';
   }
 
   $standard      = get_option('realkit_translit_standard');

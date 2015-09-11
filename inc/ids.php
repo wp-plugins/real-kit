@@ -50,7 +50,7 @@ function real_id_add_column_order($columns) {
 
   foreach ($args as $arg) {
     $arg = explode('=', $arg);
-    if ($arg[0] != 'orderby' and $arg[0] != 'order') {
+    if ($arg[0] != 'orderby' and $arg[0] != 'order' and isset($arg[1])) {
       $arr[$arg[0]] = $arg[1];
       foreach ($arr as $k => $v) {
         $href[] = $k . '=' . $v;

@@ -13,7 +13,8 @@ Domain Path: /lng/
 $realkit = array(
   'plugin_dir_path'  => plugin_dir_path(__FILE__),
   'plugin_dir_url'   => plugin_dir_url(__FILE__),
-  'modals_post_type' => 'modal_window'
+  'modals_post_type' => 'modal_window',
+  'views_meta_key'   => 'views_count'
 );
 
 if (!session_id()) session_start();
@@ -56,3 +57,6 @@ require_once $realkit['plugin_dir_path'] . 'inc/shortcode-js.php';
 
 // Модальные окна
 require_once $realkit['plugin_dir_path'] . 'inc/modals.php';
+
+// Количество просмотров
+require_once $realkit['plugin_dir_path'] . 'inc/views.php';
