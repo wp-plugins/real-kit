@@ -121,3 +121,17 @@ else {
   }
 
 }
+
+if (shortcode_exists('views')) remove_shortcode('views');
+add_shortcode('views','realkit_shortcode_views');
+
+function realkit_shortcode_views($args) {
+
+  global $realkit;
+
+  $id    = (isset($args['id']) and is_numeric($args['id'])) ? $args['id'] : get_the_ID();
+  $count = get_post_meta($id, $realkit['views_meta_key'], true);
+
+  return ($count == '') ? 0 : $count;
+
+}

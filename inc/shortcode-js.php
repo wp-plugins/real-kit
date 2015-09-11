@@ -3,8 +3,7 @@
 if (shortcode_exists('js')) remove_shortcode('js');
 add_shortcode('js','realkit_shortcode_js');
 
-function realkit_shortcode_js($args, $content = '')
-{
+function realkit_shortcode_js($args, $content = '') {
 
   if (isset($args['src'])) {
     $return = '<script type="text/javascript" src="' . $args['src'] . '"></script>';

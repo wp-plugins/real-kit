@@ -5,7 +5,7 @@ Donate link:
 Tags: kit, real, real., real.kit, image, images, thumb, thumbnail, thumbnails, category, categories, taxonomy, taxonomies, admin, id, ids, reveal, post, page, media, user, l10n, translit, transliteration, slugs, russian, rustolat, cyrtolat, cyrillic, javascript, js, add, modal, modals, window, windows, views, views count, набор, реалист, картинка, миниатюра, категории, рубрики, таксономии, метки, админ, пост, запись, страница, меди, пользователи, транслит, транслитерация, слаг, ярлык, русский, кириллица, модальные окна, просмотры, счетчик просмотров
 Requires at least: 4.1.1
 Tested up to: 4.3
-Stable tag: 3.0
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,7 @@ console.log('<(div class="test")><(a href="#")>Лог<(/a)><(/div)>');
 Пример шорткода:
 `[modal open="540" id="button_id" class="button_class"]Текст кнопки[/modal]`
 
-6) Опционально добавляет на страницах админ панели колонку с количеством уникальных просмотров (страниц и записей).
+6) Опционально добавляет на страницах админ панели колонку с количеством уникальных просмотров (страниц и записей). Получить количество просмотров можно через шорткод `[views id=123]`, где `id` - не обязательный аргумент, обозначающий ID записи или страницы (по умолчанию будет использован ID текущей страницы или записи).
 
 *Machine translation:*
 
@@ -81,7 +81,7 @@ Example:
 Shortcode example:
 `[modal open="540" id="button_id" class="button_class"]Button Title[/modal]`
 
-6) Optional adds on the pages admin panel column with the number of unique views (pages and posts).
+6) Optional adds on the pages admin panel column with the unique views count (pages and posts). Get the views count you can use the shortcode `[views id=123]`, where `id` is not required argument indicating the ID of the post or page (default: ID of the current page or post).
 
 == Installation ==
 
@@ -104,6 +104,14 @@ Like any other WordPress plugin.
 1. Количество просмотров | Views count
 
 == Changelog ==
+
+= 3.1 =
+
+* Добавлен шорткод `[views]`.
+
+*Machine translation:*
+
+* Added shortcode `[views]`.
 
 = 3.0 =
 
