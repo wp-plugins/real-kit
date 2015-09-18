@@ -4,6 +4,13 @@ $views_toggle = get_option('realkit_views_toggle');
 
 if (empty($views_toggle) or $views_toggle == 'on') {
 
+  // Сбросить счетчик
+  if (isset($_GET['realkit_clear_views']) and is_numeric($_GET['realkit_clear_views'])) {
+    global $realkit;
+    update_post_meta($_GET['realkit_clear_views'], $realkit['views_meta_key'], 0);
+    unset($_SESSION[$realkit['views_meta_key']][$_GET['realkit_clear_views']]);
+  }
+
   // Добавить колонку с количеством просмотров
   add_action('admin_init', 'realkit_views_admin_init');
   function realkit_views_admin_init() {
@@ -36,6 +43,21 @@ if (empty($views_toggle) or $views_toggle == 'on') {
     if ($column == 'realkit_views') {
       $views = get_post_meta($post->ID, $realkit['views_meta_key'], true);
       echo ($views == '' or !is_numeric($views)) ? 0 : $views;
+      echo '<a href="?realkit_clear_views=' . $post->ID . '">Сбросить</a>';
+    }
+  }
+
+  // CSS
+  add_action('init', 'realkit_views_common');
+  function realkit_views_common() {
+    if (is_admin()) {
+
+      global $realkit;
+      $url = $realkit['plugin_dir_url'];
+
+      wp_register_style('realviews', $url . 'css/views.css');
+      wp_enqueue_style('realviews');
+
     }
   }
 

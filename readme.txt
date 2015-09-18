@@ -5,7 +5,7 @@ Donate link:
 Tags: kit, real, real., real.kit, image, images, thumb, thumbnail, thumbnails, category, categories, taxonomy, taxonomies, admin, id, ids, reveal, post, page, media, user, l10n, translit, transliteration, slugs, russian, rustolat, cyrtolat, cyrillic, javascript, js, add, modal, modals, window, windows, views, views count, набор, реалист, картинка, миниатюра, категории, рубрики, таксономии, метки, админ, пост, запись, страница, меди, пользователи, транслит, транслитерация, слаг, ярлык, русский, кириллица, модальные окна, просмотры, счетчик просмотров
 Requires at least: 4.1.1
 Tested up to: 4.3
-Stable tag: 3.1
+Stable tag: 3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,8 +102,17 @@ Like any other WordPress plugin.
 1. Модальные окна | Modal windows
 1. Отключение модальных окон | Modal windows toggle
 1. Количество просмотров | Views count
+1. Сброс счетчика просмотров | Reset views counter
 
 == Changelog ==
+
+= 3.2 =
+
+* Добавлена ссылка для сброса количества просмотров.
+
+*Machine translation:*
+
+* Added a link to reset the views counter.
 
 = 3.1 =
 
